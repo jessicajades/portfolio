@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script>
+      (function() {
+        var t,
+          i,
+          e,
+          n = window,
+          o = document,
+          a = arguments,
+          s = "script",
+          r = [
+            "config",
+            "track",
+            "identify",
+            "visit",
+            "push",
+            "call",
+            "trackForm",
+            "trackClick"
+          ],
+          c = function() {
+            var t,
+              i = this;
+            for (i._e = [], t = 0; r.length > t; t++)
+              (function(t) {
+                i[t] = function() {
+                  return (
+                    i._e.push(
+                      [t].concat(Array.prototype.slice.call(arguments, 0))
+                    ),
+                    i
+                  );
+                };
+              })(r[t]);
+          };
+        for (n._w = n._w || {}, t = 0; a.length > t; t++)
+          n._w[a[t]] = n[a[t]] = n[a[t]] || new c();
+        (i = o.createElement(s)),
+          (i.async = 1),
+          (i.src = "//static.woopra.com/js/w.js"),
+          (e = o.getElementsByTagName(s)[0]),
+          e.parentNode.insertBefore(i, e);
+      })("woopra");
+
+      woopra.config({
+        domain: "jessicajade.dev"
+      });
+      woopra.track();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../icons8-heart-outline-80.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oswald:200,300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anonymous+Pro|B612+Mono|Cousine|Cutive+Mono|Fira+Mono|IBM+Plex+Mono:300,400|Inconsolata|Overpass+Mono:300,400|Oxygen+Mono|PT+Mono|Roboto+Mono:300,400|Source+Code+Pro:300,400|Space+Mono|Ubuntu+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Jessica Shepherd | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <a href="../index.html"
+          ><img
+            src="http://i64.tinypic.com/iz13qx.png"
+            alt="name-img"
+            id="main-photo"
+        /></a>
+      </div>
+      <nav>
+        <a href="../index.html" class="link1">Home</a>
+        <a href="../about.html" class="link2">About</a>
+        <a href="../resume.html" class="link3">Resume</a>
+        <div class="line-break"></div>
+        <a href="../portfolio.html" class="link4">Portfolio</a>
+        <a href="../contact.html" class="link5">Contact</a>
+      </nav>
+    </header>
+    <main id="bloc-jams-main">
+      <div id="bloc-jams-text">
+        <h2>Bloc Jams</h2>
+        <a href="https://sad-shannon-0a885a.netlify.com/" target="_blank"
+          >Live Link</a
+        >
+        &#183;
+        <a
+          href="https://github.com/jessicajades/bloc-jams-react"
+          target="_blank"
+          >Github</a
+        >
+        <p>
+          Bloc Jams is the first React application I built. It is a streaming
+          music player with full functionality. The app was built with the
+          following components: Landing, Library, Album, and Player Bar.
+        </p>
+        <p>
+          This project shows the practical application of the following skills:
+        </p>
+        <ul>
+          <li>React</li>
+          <li>CSS</li>
+        </ul>
+        <a href="../portfolio.html" id="backLink">
+          <i class="fas fa-long-arrow-alt-left"></i> Back to portfolio
+        </a>
+      </div>
+      <img src="../bloc-jams.png" />
+    </main>
+  </body>
+</html>

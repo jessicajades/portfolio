@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: "Source Code Pro", monospace;
+}
+
+/* overpass mono for p
+    I like ibm 
+*/
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-photo {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Oswald;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 15px;
+  letter-spacing: 0.3em;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.link1:hover {
+  color: #b877db;
+}
+
+.link2:hover {
+  color: #e95678;
+}
+
+.link3:hover {
+  color: #25b0bc;
+}
+
+.link4:hover {
+  color: #f09483;
+}
+
+.link5:hover {
+  color: #b877db;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content h1 {
+  font-size: 100px;
+  color: #e95678;
+  letter-spacing: 0;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+#main-content p {
+  font-size: 4.5vw;
+  color: #202020;
+  font-weight: 300;
+  margin: 50px 0 0 20px;
+}
+
+#social {
+  display: flex;
+  font-size: 30px;
+  padding: 20px;
+  display: block;
+  margin: 0 0 0 65%;
+}
+
+.black:hover {
+  color: #202020;
+  transition: all 0.3s ease-in-out;
+}
+
+.purple {
+  color: #b877db;
+}
+
+.pink {
+  color: #e95678;
+}
+
+.blue {
+  color: #25b0bc;
+}
+
+.peach {
+  color: #f09483;
+}
+
+/* ABOUT */
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+}
+
+#profile-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: justify;
+  margin-right: 2%;
+}
+
+#bottom {
+  margin-top: 11px;
+}
+
+#profile-text h2 {
+  margin-bottom: 0;
+  color: #b877db;
+}
+
+#profile-photo {
+  width: 40%;
+  /* height: auto; */
+  border-radius: 50%;
+  margin-left: 2%;
+}
+
+/* CONTACT PAGE */
+
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  color: #f09483;
+}
+
+#contact a {
+  color: #202020;
+}
+
+a#contactHov:hover {
+  color: #f09483;
+  font-style: italic;
+  transition: none;
+}
+
+#contact h2 {
+  margin: 30px 0 10px 0;
+  font-size: 30px;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+
+p#also {
+  margin: 10px 0 0 0;
+}
+
+ul#contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#contact-list a {
+  text-decoration: none;
+}
+
+#contact-list a:hover {
+  font-style: italic;
+}
+
+li.linkLink:hover {
+  color: #b877db;
+}
+
+#contact li {
+  padding: 10px;
+}
+
+/* PORTFOLIO */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin-top: 30px;
+}
+
+.project {
+  border: 1px solid #202020;
+  width: 250px;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #202020;
+}
+
+.project:hover {
+  /* background-color: pink; */
+  transform: scale(1.03);
+  box-shadow: 1px 1px 2px #202020;
+}
+
+.icons {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.project h2,
+p {
+  margin: 5px;
+}
+
+#portfolio a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* BLOC JAMS */
+
+#bloc-jams-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#bloc-jams-main img {
+  width: 25%;
+  margin-top: 20px;
+}
+
+#bloc-jams-text {
+  max-width: 40%;
+  align-self: flex-start;
+  text-align: justify;
+  margin: 50px;
+}
+
+#bloc-jams-text h2 {
+  margin-bottom: 10px;
+  color: #e95678;
+}
+
+#bloc-jams-text p {
+  margin: 10px;
+}
+
+#bloc-jams-text a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #202020;
+  margin-bottom: 10px;
+}
+
+#bloc-jams-text a:hover {
+  font-style: italic;
+  color: #e95678;
+  transition: none;
+}
+
+a#backLink {
+  display: block;
+  padding-top: 35px;
+}
+
+/* UNDER CONSTRUCTION */
+
+.projPending {
+  text-align: center;
+}
+
+.projPending h2 {
+  margin: 40px 0 15px 0;
+}
+
+h2#chat-title {
+  color: #f09483;
+}
+
+h2#airplane-title {
+  color: #b877db;
+}
+
+.projPending a {
+  color: #202020;
+}
+
+.projPending a:hover {
+  font-style: italic;
+  transition: none;
+}
+
+a#chat-link:hover {
+  color: #f09483;
+}
+
+a#airplane-link:hover {
+  color: #b877db;
+}
+
+.projPending p {
+  margin: 10px;
+}
+
+/* RESUME */
+
+main#resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume img {
+  margin: 20px;
+  max-width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .line-break {
+    width: 100%;
+  }
+
+  #about {
+    flex-wrap: wrap;
+    margin: 8px;
+  }
+
+  #profile-photo {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    margin: 30px;
+  }
+
+  #bloc-jams-main img {
+    width: 100%;
+    margin: 0;
+  }
+
+  #bloc-jams-text {
+    max-width: 100%;
+    margin: 25px 25px 5px 25px;
+  }
+
+  #bloc-jams-main {
+    flex-direction: row;
+    flex-wrap: wrap !important;
+  }
+
+  a#backLink {
+    padding-top: 15px;
+  }
+
+  #resume img {
+    max-width: 90%;
+  }
+
+  .projPending {
+    margin: 0 10px;
+  }
+
+  #contact {
+    margin: 0 5px;
+  }
+}
