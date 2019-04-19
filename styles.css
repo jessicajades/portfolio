@@ -292,6 +292,33 @@ a#backLink {
   padding-top: 35px;
 }
 
+/* BLOC CHAT */
+
+#bloc-chat-text {
+  max-width: 40%;
+  align-self: flex-start;
+  text-align: justify;
+  margin: 50px;
+}
+
+#bloc-chat-text h2 {
+  margin-bottom: 10px;
+  color: #f09483;
+}
+
+#bloc-chat-text a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #202020;
+  margin-bottom: 10px;
+}
+
+#bloc-chat-text a:hover {
+  font-style: italic;
+  color: #f09483;
+  transition: none;
+}
+
 /* UNDER CONSTRUCTION */
 
 .projPending {
