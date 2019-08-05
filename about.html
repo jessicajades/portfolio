@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script>
-      (function() {
-        var t,
-          i,
-          e,
-          n = window,
-          o = document,
-          a = arguments,
-          s = "script",
-          r = [
-            "config",
-            "track",
-            "identify",
-            "visit",
-            "push",
-            "call",
-            "trackForm",
-            "trackClick"
-          ],
-          c = function() {
-            var t,
-              i = this;
-            for (i._e = [], t = 0; r.length > t; t++)
-              (function(t) {
-                i[t] = function() {
-                  return (
-                    i._e.push(
-                      [t].concat(Array.prototype.slice.call(arguments, 0))
-                    ),
-                    i
-                  );
-                };
-              })(r[t]);
-          };
-        for (n._w = n._w || {}, t = 0; a.length > t; t++)
-          n._w[a[t]] = n[a[t]] = n[a[t]] || new c();
-        (i = o.createElement(s)),
-          (i.async = 1),
-          (i.src = "//static.woopra.com/js/w.js"),
-          (e = o.getElementsByTagName(s)[0]),
-          e.parentNode.insertBefore(i, e);
-      })("woopra");
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script>
+            (function() {
+                var t,
+                    i,
+                    e,
+                    n = window,
+                    o = document,
+                    a = arguments,
+                    s = "script",
+                    r = [
+                        "config",
+                        "track",
+                        "identify",
+                        "visit",
+                        "push",
+                        "call",
+                        "trackForm",
+                        "trackClick"
+                    ],
+                    c = function() {
+                        var t,
+                            i = this;
+                        for (i._e = [], t = 0; r.length > t; t++)
+                            (function(t) {
+                                i[t] = function() {
+                                    return (
+                                        i._e.push(
+                                            [t].concat(
+                                                Array.prototype.slice.call(
+                                                    arguments,
+                                                    0
+                                                )
+                                            )
+                                        ),
+                                        i
+                                    );
+                                };
+                            })(r[t]);
+                    };
+                for (n._w = n._w || {}, t = 0; a.length > t; t++)
+                    n._w[a[t]] = n[a[t]] = n[a[t]] || new c();
+                (i = o.createElement(s)),
+                    (i.async = 1),
+                    (i.src = "//static.woopra.com/js/w.js"),
+                    (e = o.getElementsByTagName(s)[0]),
+                    e.parentNode.insertBefore(i, e);
+            })("woopra");
 
-      woopra.config({
-        domain: "jessicajade.dev"
-      });
-      woopra.track();
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="icons8-heart-outline-80.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oswald:200,300,400,500"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anonymous+Pro|B612+Mono|Cousine|Cutive+Mono|Fira+Mono|IBM+Plex+Mono:300,400|Inconsolata|Overpass+Mono:300,400|Oxygen+Mono|PT+Mono|Roboto+Mono:300,400|Source+Code+Pro:300,400|Space+Mono|Ubuntu+Mono"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <title>Jessica Shepherd | About</title>
-  </head>
-  <body>
-    <header>
-      <div id="header">
-        <a href="index.html"
-          ><img src="./main-photo.png" alt="name-img" id="main-photo"
-        /></a>
-      </div>
-      <nav>
-        <a href="/" class="link1">Home</a>
-        <a href="about" class="link2">About</a>
-        <a href="resume" class="link3">Resume</a>
-        <div class="line-break"></div>
-        <a href="portfolio" class="link4">Portfolio</a>
-        <a href="contact" class="link5">Contact</a>
-      </nav>
-    </header>
-    <main id="about">
-      <img
-        src="http://i65.tinypic.com/n19vnl.jpg"
-        alt="profile-photo"
-        id="profile-photo"
-      />
-      <div id="profile-text">
-        <h2>A little about me...</h2>
-        <p>
-          Hi. My name is Jessica Shepherd, but you can call me Jess. I'm a
-          front-end (and aspiring full-stack) Web Developer. I've spent the past
-          couple of years working in private aviation, wondering what I wanted
-          to do with the rest of my life. When a friend of mine suggested
-          programming to me, I immediately knew it was the direction I wanted to
-          go, and haven't looked back since. Some of my fondest memories include
-          me, sitting at my clunky desktop computer, using HTML and CSS to
-          customize every part of my MySpace profile. Yet I never realized that
-          I could turn my love of personalized layouts into a career.
-        </p>
-        <p id="bottom">
-          I am currently enrolled in a program called Bloc, which is preparing
-          me for every aspect of being a web developer. I am learning both
-          front-end and back-end technologies, along with computer science
-          fundamentals such as data structures and algorithms. It is very
-          hands-on, and I've made several projects with technologies such as
-          React and NodeJS. I'm looking to take these skills I've learned and
-          apply them to my first job as a developer.
-        </p>
-      </div>
-    </main>
-  </body>
+            woopra.config({
+                domain: "jessicajade.dev"
+            });
+            woopra.track();
+        </script>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="icons8-heart-outline-80.png" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oswald:200,300,400,500"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Anonymous+Pro|B612+Mono|Cousine|Cutive+Mono|Fira+Mono|IBM+Plex+Mono:300,400|Inconsolata|Overpass+Mono:300,400|Oxygen+Mono|PT+Mono|Roboto+Mono:300,400|Source+Code+Pro:300,400|Space+Mono|Ubuntu+Mono"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <title>Jessica Shepherd | About</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <a href="index.html"
+                    ><img src="./main-photo.png" alt="name-img" id="main-photo"
+                /></a>
+            </div>
+            <nav>
+                <a href="/" class="link1">Home</a>
+                <a href="about" class="link2">About</a>
+                <a href="resume" class="link3">Resume</a>
+                <div class="line-break"></div>
+                <a href="portfolio" class="link4">Portfolio</a>
+                <a href="contact" class="link5">Contact</a>
+            </nav>
+        </header>
+        <main id="about">
+            <img
+                src="./profile-photo.jpg"
+                alt="profile-photo"
+                id="profile-photo"
+            />
+            <div id="profile-text">
+                <h2>A little about me...</h2>
+                <p>
+                    Hi. My name is Jessica Shepherd, but you can call me Jess.
+                    I'm a front-end (and aspiring full-stack) Web Developer.
+                    I've spent the past couple of years working in private
+                    aviation, wondering what I wanted to do with the rest of my
+                    life. When a friend of mine suggested programming to me, I
+                    immediately knew it was the direction I wanted to go, and
+                    haven't looked back since. Some of my fondest memories
+                    include me, sitting at my clunky desktop computer, using
+                    HTML and CSS to customize every part of my MySpace profile.
+                    Yet I never realized that I could turn my love of
+                    personalized layouts into a career.
+                </p>
+                <p id="bottom">
+                    I am currently enrolled in a program called Bloc, which is
+                    preparing me for every aspect of being a web developer. I am
+                    learning both front-end and back-end technologies, along
+                    with computer science fundamentals such as data structures
+                    and algorithms. It is very hands-on, and I've made several
+                    projects with technologies such as React and NodeJS. I'm
+                    looking to take these skills I've learned and apply them to
+                    my first job as a developer.
+                </p>
+            </div>
+        </main>
+    </body>
 </html>
