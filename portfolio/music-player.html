@@ -57,15 +57,8 @@
             });
             woopra.track();
         </script>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" href="icons8-heart-outline-80.png" />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-            crossorigin="anonymous"
-        />
-
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="icon" href="../icons8-heart-outline-80.png" />
         <link
             href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oswald:200,300,400,500"
             rel="stylesheet"
@@ -82,67 +75,61 @@
         />
         <title>Jessica Shepherd | Portfolio</title>
     </head>
-
     <body>
         <header>
             <div id="header">
-                <a href="index.html"
-                    ><img src="./main-photo.png" alt="name-img" id="main-photo"
+                <a href="../index.html"
+                    ><img
+                        src="../main-photo.png"
+                        alt="name-img"
+                        id="main-photo"
                 /></a>
             </div>
             <nav>
-                <a href="/" class="link1">Home</a>
-                <a href="about" class="link2">About</a>
-                <a href="resume" class="link3">Resume</a>
+                <a href="../" class="link1">Home</a>
+                <a href="../about" class="link2">About</a>
+                <a href="../resume" class="link3">Resume</a>
                 <div class="line-break"></div>
-                <a href="portfolio" class="link4">Portfolio</a>
-                <a href="contact" class="link5">Contact</a>
+                <a href="../portfolio" class="link4">Portfolio</a>
+                <a href="../contact" class="link5">Contact</a>
             </nav>
         </header>
-        <main id="portfolio">
-            <div class="container">
-                <a href="portfolio/bloc-chat">
-                    <div class="project">
-                        <img src="chat.svg" class="icons" />
-                        <h2>Bloc Chat</h2>
-                        <p>React, Firebase, JSX, CSS</p>
-                    </div>
+        <main id="bloc-jams-main">
+            <div id="bloc-chat-text">
+                <h2>Music Player</h2>
+                <a
+                    href="https://jessicajades-music-player.herokuapp.com/"
+                    target="_blank"
+                    >Live Link</a
+                >
+                &#183;
+                <a
+                    href="https://github.com/jessicajades/music-player"
+                    target="_blank"
+                    >Github</a
+                >
+                <p>
+                    A digital music player built with React. It consists of
+                    several pages, including landing, library, and an album
+                    details page. The album page includes an interactive music
+                    bar that allows the user to adjust the volume and seek
+                    through the track.
+                </p>
+                <p>
+                    This project shows the practical application of the
+                    following skills:
+                </p>
+                <ul>
+                    <li>React</li>
+                    <li>JSX</li>
+                    <li>React Router</li>
+                    <li>Custom CSS</li>
+                </ul>
+                <a href="../portfolio" id="backLink">
+                    <i class="fas fa-long-arrow-alt-left"></i> Back to portfolio
                 </a>
-                <a href="portfolio/blocipedia">
-                    <div class="project">
-                        <img src="wikipedia.svg" class="icons" />
-                        <h2>Blocipedia</h2>
-                        <p>
-                            Node, Express, PostgreSQL, Embedded JavaScript (EJS)
-                        </p>
-                    </div>
-                </a>
-                <a href="portfolio/the-wall">
-                    <div class="project">
-                        <img src="smartphone.svg" class="icons" />
-                        <h2>The Wall</h2>
-                        <p>React, Firebase, JSX, CSS, Design</p>
-                    </div>
-                </a>
-                <a href="portfolio/knope-quote">
-                    <div class="project">
-                        <img src="quote.svg" class="icons" />
-                        <h2>Knope Quote</h2>
-                        <p>React, JSX, CSS, Design</p>
-                    </div>
-                </a>
-                <a href="portfolio/music-player">
-                    <div class="project">
-                        <img src="music.svg" class="icons" />
-                        <h2>Music Player</h2>
-                        <p>React, JSX, CSS, Design</p>
-                    </div>
-                </a>
-                <div class="project">
-                    <img src="more.svg" class="icons" />
-                    <h2>More coming soon!</h2>
-                </div>
             </div>
+            <img src="../music-player.png" />
         </main>
     </body>
 </html>
